@@ -36,8 +36,8 @@ function AppLayout() {
   return (
     <StyledAppLayout>
       <Header />
-      <Sidebar />
       <Main>
+        <Sidebar />
         <Container>
           <Outlet />
         </Container>

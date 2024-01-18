@@ -14,6 +14,8 @@ const Main = styled.main`
   background-color: var(--color-gray-50);
   padding: 4rem 4.8rem 6.4rem;
   overflow-y: auto;
+  min-height: calc(100vh - 70px);
+  grid-column: 2/-1;
 
   &::-webkit-scrollbar {
     width: 1.2rem;
@@ -35,9 +37,9 @@ const Container = styled.div`
 function AppLayout() {
   return (
     <StyledAppLayout>
+      <Sidebar />
       <Header />
       <Main>
-        <Sidebar />
         <Container>
           <Outlet />
         </Container>

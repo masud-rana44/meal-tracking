@@ -7,6 +7,10 @@ import Account from "./pages/Account";
 import Login from "./pages/Login";
 import PageNotFound from "./pages/PageNotFound";
 import { Toaster } from "react-hot-toast";
+import Bazar from "./pages/Bazar";
+import Meal from "./pages/Meal";
+import Users from "./pages/Users";
+import Settings from "./pages/Settings";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -25,6 +29,10 @@ const App = () => {
           <Route element={<AppLayout />}>
             <Route index element={<Navigate replace to="dashboard" />} />
             <Route path="dashboard" element={<Dashboard />} />
+            <Route path="bazar" element={<Bazar />} />
+            <Route path="meal" element={<Meal />} />
+            <Route path="users" element={<Users />} />
+            <Route path="settings" element={<Settings />} />
             <Route path="account" element={<Account />} />
           </Route>
           <Route path="login" element={<Login />} />

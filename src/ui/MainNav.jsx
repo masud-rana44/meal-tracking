@@ -7,6 +7,7 @@ import {
   HiOutlineHomeModern,
   HiOutlineUser,
 } from "react-icons/hi2";
+import { CiShoppingCart } from "react-icons/ci";
 
 const NavList = styled.ul`
   display: flex;
@@ -63,13 +64,13 @@ function MainNav() {
           </StyledNavLink>
         </li>
         <li>
-          <StyledNavLink to="/bookings">
-            <HiOutlineCalendarDays /> <span>Bookings</span>
+          <StyledNavLink to="/bazar">
+            <CiShoppingCart /> <span>Bazar</span>
           </StyledNavLink>
         </li>
         <li>
-          <StyledNavLink to="/cabins">
-            <HiOutlineHomeModern /> <span>Cabins</span>
+          <StyledNavLink to="/meal">
+            <HiOutlineHomeModern /> <span>Meal</span>
           </StyledNavLink>
         </li>
         <li>

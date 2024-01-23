@@ -1,7 +1,6 @@
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import {
-  HiOutlineCalendarDays,
   HiOutlineCog6Tooth,
   HiOutlineHome,
   HiOutlineHomeModern,
@@ -64,7 +63,7 @@ function MainNav() {
           </StyledNavLink>
         </li>
         <li>
-          <StyledNavLink to="/bazar">
+          <StyledNavLink to="/bazars">
             <CiShoppingCart /> <span>Bazar</span>
           </StyledNavLink>
         </li>

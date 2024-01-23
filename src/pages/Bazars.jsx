@@ -8,12 +8,12 @@ const Bazars = () => {
   return (
     <>
       <Row type="horizontal">
-        <Heading as="h1">All cabins</Heading>
+        <Heading as="h1">All bazars</Heading>
         <CabinTableOperations />
       </Row>
 
       <Row>
-        <CabinTable />
+        {/* <CabinTable /> */}
         <AddBazar />
       </Row>
     </>

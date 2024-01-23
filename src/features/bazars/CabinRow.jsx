@@ -2,13 +2,13 @@ import styled from "styled-components";
 import { HiSquare2Stack, HiPencil, HiTrash } from "react-icons/hi2";
 
 import { formatCurrency } from "../../utils/helpers.js";
-import CreateCabinForm from "./CreateCabinForm.jsx";
 import { useDeleteCabin } from "./useDeleteCabin.js";
 import { useCreateCabin } from "./useCreateCabin.js";
 import Modal from "../../ui/Modal.jsx";
 import ConfirmDelete from "../../ui/ConfirmDelete.jsx";
 import Table from "../../ui/Table.jsx";
 import Menus from "../../ui/Menus.jsx";
+import CreateBazarForm from "./CreateBazarForm.jsx";
 
 const Img = styled.img`
   display: block;
@@ -93,7 +93,7 @@ function CabinRow({ cabin }) {
             </Menus.List>
 
             <Modal.Window name="update">
-              <CreateCabinForm cabinToUpdate={cabin} />
+              <CreateBazarForm cabinToUpdate={cabin} />
             </Modal.Window>
 
             <Modal.Window name="delete">

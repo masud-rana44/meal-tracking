@@ -6,10 +6,10 @@ function AddBazar() {
   return (
     <div>
       <Modal>
-        <Modal.Open opens="cabin-form">
-          <Button>Add new cabin</Button>
+        <Modal.Open opens="bazar-form">
+          <Button>Add new bazar</Button>
         </Modal.Open>
-        <Modal.Window name="cabin-form">
+        <Modal.Window name="bazar-form">
           <CreateBazarForm />
         </Modal.Window>
       </Modal>

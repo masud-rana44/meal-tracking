@@ -55,6 +55,15 @@ function CreateBazarForm({ cabinToUpdate = {}, onCloseModal }) {
       onSubmit={handleSubmit(onSubmit)}
       type={onCloseModal ? "modal" : "regular"}
     >
+      <FormRow label="Bazar date" error={errors?.name?.message}>
+        <Input
+          type="text"
+          id="name"
+          disabled={isWorking}
+          {...register("name", { required: "This filed is required" })}
+        />
+      </FormRow>
+
       <FormRow label="Cabin name" error={errors?.name?.message}>
         <Input
           type="text"
